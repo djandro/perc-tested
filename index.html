@@ -241,6 +241,33 @@
 	<script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/jquery.infinitescroll.min.js"></script>
 
+	<script type="text/javascript">
+    	// STICKY ANIMATION MENU
+		$(function(){
+			$('.navbar').data('size','big');
+		});
+	
+		$(window).scroll(function(){
+			var $nav = $('.navbar');
+			if ($('body').scrollTop() > 0) {
+				if ($nav.data('size') == 'big') {
+					$nav.data('size','small').stop().animate({
+						paddingTop:'0px',
+						paddingBottom:'0px'
+					}, 400);
+				}
+			} else {
+				if ($nav.data('size') == 'small') {
+					$nav.data('size','big').stop().animate({
+						paddingTop:'15px',
+						paddingBottom:'15px'
+					}, 400);
+				}  
+			}
+		});
+	
+    </script>
+
     <script type="text/javascript">
 		$(function(){
 		  // INFINITE SCROLL
