@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="sl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Andraž Hostnik">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato|Roboto:300,400,700,900&subset=latin-ext,latin' rel='stylesheet' type='text/css' />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/theme.min.css" rel="stylesheet" />
+    <script src="/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+    <title></title> <!-- TODO page title -->
+	<meta name="description" content=""/> <!-- TODO page desc -->
+    
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">O PODJETJU</a></li>
+            <li><a href="#">ZAPOSLENI</a></li>
+            <li><a href="#">PROJEKTI</a></li>
+            <li><a href="#">NAJPOGOSTEJŠA VPRAŠANJA</a></li>
+            <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div><!-- end navbar -->
+    
+    <!-- CAROUSEL -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item">
+          <div class="carousel-bg slider1"></div>
+        </div>
+        <div class="item active">
+          <div class="carousel-bg slider2"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-warning" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+		  <div class="carousel-bg slider3"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-warning" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div> <!-- end carousel -->
+
+
+	<div id="dg" style="padding:40px 0;">
+		<div class="container">
+			<div class="row text-center">
+				<h4 style="font-size:22px">TESTNI ARTIKLI <i class="fa fa-arrow-circle-o-down" style="margin-left:10px;"></i></h4>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- dg -->
+
+	<!-- artikli -->
+	<div class="container w">
+		
+        <div class="text-center" style="margin-bottom:20px">
+            <b style="padding-right:10px">Filter artiklov:</b>	
+            <div id="filters" class="btn-group btn-group-sm text-center">
+                <button class="btn btn-default btn-sm active" data-filter="*">prikaži vse</button>
+                <button class="btn btn-default btn-sm btn-talep" data-filter=".talep">samo talepe</button>
+            </div>
+		</div>
+		
+        <div class="row text-center artikli">
+			<div class="col-sm-6 col-lg-3 talep">
+            	<div class="panel panel-default">
+                    <div class="panel-body">
+                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGh1bWJuYWlsPC90ZXh0Pjwvc3ZnPg==" />
+                        <a href="#" class="btn btn-primary btn-block"><b>Dodaj v košarico >></b></a>
+                    </div>
+                </div>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-sm-6 col-lg-3">
+            	<div class="panel panel-default">
+                    <div class="panel-body">
+                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGh1bWJuYWlsPC90ZXh0Pjwvc3ZnPg==" />
+                        <a href="#" class="btn btn-primary btn-block"><b>Dodaj v košarico >></b></a>
+                    </div>
+            	</div>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-sm-6 col-lg-3 talep">
+            	<div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGh1bWJuYWlsPC90ZXh0Pjwvc3ZnPg==" />
+                        <a href="#" class="btn btn-primary btn-block"><b>Dodaj v košarico >></b></a>
+                    </div>
+            	</div>
+			</div><!-- col-lg-3 -->
+            
+			<div class="col-sm-6 col-lg-3 talep">
+            	<div class="panel panel-default">
+                    <div class="panel-body">
+                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGh1bWJuYWlsPC90ZXh0Pjwvc3ZnPg==" />
+                        <a href="#" class="btn btn-primary btn-block"><b>Dodaj v košarico >></b></a>
+                    </div>
+            	</div>
+			</div><!-- col-lg-3 -->       
+            
+            
+			<div class="col-sm-6 col-lg-3">
+            	<div class="panel panel-default">
+                    <div class="panel-body">
+                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGh1bWJuYWlsPC90ZXh0Pjwvc3ZnPg==" />
+                        <a href="#" class="btn btn-primary btn-block"><b>Dodaj v košarico >></b></a>
+                    </div>
+                </div>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-sm-6 col-lg-3 talep">
+            	<div class="panel panel-default">
+                    <div class="panel-body">
+                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGh1bWJuYWlsPC90ZXh0Pjwvc3ZnPg==" />
+                        <a href="#" class="btn btn-primary btn-block"><b>Dodaj v košarico >></b></a>
+                    </div>
+            	</div>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-sm-6 col-lg-3">
+            	<div class="panel panel-default">
+                    <div class="panel-body">
+                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGh1bWJuYWlsPC90ZXh0Pjwvc3ZnPg==" />
+                        <a href="#" class="btn btn-primary btn-block"><b>Dodaj v košarico >></b></a>
+                    </div>
+            	</div>
+			</div><!-- col-lg-3 -->
+            
+			<div class="col-sm-6 col-lg-3">
+            	<div class="panel panel-default">
+                    <div class="panel-body">
+                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGh1bWJuYWlsPC90ZXh0Pjwvc3ZnPg==" />
+                        <a href="#" class="btn btn-primary btn-block"><b>Dodaj v košarico >></b></a>
+                    </div>
+            	</div>
+			</div><!-- col-lg-3 -->                 
+            
+		</div><!-- row -->
+
+        <nav id="page_nav" style="display: none;">
+            <a href="loadmore.html"></a>
+        </nav>        
+        
+	</div><!-- container artikli -->
+
+	<!-- footer -->
+    <div id="f">
+        <div class="container">
+            <div class="row text-center">
+                    <span>FOOTER TODO</span>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- Footer -->
+	
+    <!-- modal kontakt -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Kontakt</h4>
+          </div>
+          <div class="modal-body">
+                <div class="row text-center">
+                    <p>Podjetje d.o.o.</p>
+                    <p>
+                        Primer 123<br/>
+                        1000 Primer<br/>
+                        Telefon: 000<br/>
+                        Gsm: 000<br/>
+                        Email: <a href="#">test@test.si</a>
+                    </p>
+                    <div id="mapwrap">
+        <iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2773.550624659562!2d15.084862999999995!3d45.9602608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765056aff921a75%3A0x84729f92b197a17b!2sSlovenska+vas+5!5e0!3m2!1ssl!2s!4v1402955871493"></iframe>
+                    </div>	
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Zapri</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.0.min.js"><\/script>')</script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.infinitescroll.min.js"></script>
+
+    <script type="text/javascript">
+		$(function(){
+		  // INFINITE SCROLL
+		  var $container = $('.artikli');
+		  
+		  $container.infinitescroll({
+			navSelector  : '#page_nav',   
+			nextSelector : '#page_nav a',	  
+			itemSelector : '.col-lg-3',
+			loading: {
+				finishedMsg: 'Ni več artiklov.',
+				img: '',
+				msgText: '<i class="fa fa-spinner fa-spin"></i>',
+			  },
+			dataType	 	: 'html',
+			extraScrollPx	:	82,
+			path: function(index) {
+						return "loadmore.html";
+				}			  
+			},		
+			// call Isotope as a callback
+			function( newElements ) {
+			  $container.isotope( 'appended', $( newElements ) ); 
+			}
+		  );
+		});
+    </script>
+    
+    <script type="text/javascript">
+		// FILTER ARTIKOV
+    	$( function() {
+		  // init Isotope
+		  var $container = $('.artikli').isotope({
+			itemSelector: '.col-lg-3',
+			layoutMode: 'fitRows'
+		  });
+		
+		  // bind filter button click
+		  $('#filters').on( 'click', 'button', function() {		  
+			  
+			var filterValue = $( this ).attr('data-filter');
+			
+			$container.isotope({ filter: filterValue });
+		  });
+
+		  // change active class on buttons
+		  $('.btn-group').each( function( i, buttonGroup ) {
+			var $buttonGroup = $( buttonGroup );
+			$buttonGroup.on( 'click', 'button', function() {
+			  $buttonGroup.find('.active').removeClass('active');
+			  $( this ).addClass('active');
+			});
+		  });
+		  
+		});
+    </script>
+    
+  </body>
+</html>
